@@ -1,0 +1,144 @@
+<div class="form-center">
+  <form class="text-center border border-light p-5">
+    <p class="h4 mb-4">Sign up</p>
+
+    <div class="form-row mb-4">
+      <div class="col">
+        <span>First name:</span>
+        <input
+          type="text"
+          id="defaultRegisterFormFirstName"
+          class="form-control"
+          placeholder="First name"
+        />
+      </div>
+      <div class="col">
+        <span>Last name:</span>
+        <input
+          type="text"
+          id="defaultRegisterFormLastName"
+          class="form-control"
+          placeholder="Last name"
+        />
+      </div>
+    </div>
+
+    <div class="form-row mb-4">
+      <div class="col">
+        <span>E-mail:</span>
+        <input
+          type="email"
+          id="defaultRegisterFormEmail"
+          class="form-control mb-4"
+          placeholder="E-mail"
+        />
+      </div>
+      <div class="col">
+        <span>D.O.B:</span>
+        <input
+          type="date"
+          id="defaultRegisterFormDOB"
+          class="form-control mb-4"
+          placeholder="D.O.B"
+        />
+      </div>
+    </div>
+
+    <div class="form-row mb-4">
+      <div class="col">
+        <span>Password</span>
+        <input
+          type="password"
+          id="defaultRegisterFormPassword"
+          class="form-control"
+          placeholder="Password"
+          aria-describedby="defaultRegisterFormPasswordHelpBlock"
+        />
+        <small
+          id="defaultRegisterFormPasswordHelpBlock"
+          class="form-text text-muted mb-4"
+        >
+          At least 8 characters and 1 digit
+        </small>
+      </div>
+      <div class="col">
+        <span>Confirm Password:</span>
+        <input
+          type="password"
+          id="defaultRegisterFormConfirmPassword"
+          class="form-control"
+          placeholder="Password"
+          aria-describedby="defaultRegisterFormConfirmPasswordHelpBlock"
+        />
+        <small
+          id="defaultRegisterFormConfirmPasswordHelpBlock"
+          class="form-text text-muted mb-4"
+        >
+          At least 8 characters and 1 digit
+        </small>
+      </div>
+    </div>
+
+    <div class="form-row mb-4">
+      <div class="col">
+        <span>City:</span>
+        <input
+          list="cities"
+          id="defaultRegisterCity"
+          class="form-control"
+          placeholder="City"
+        />
+
+        <datalist id="cities">
+          <option value="Chennai"> </option>
+          <option value="Kanchipuram"> </option>
+          <option value="Vellore"> </option>
+          <option value="Tiruvannamalai"> </option>
+          <option value="Thanjavur"> </option>
+        </datalist>
+      </div>
+      <div class="col">
+        <span>State:</span>
+        <input
+          list="states"
+          id="defaultRegisterState"
+          class="form-control"
+          placeholder="State"
+        />
+
+        <datalist id="states">
+          <option value="Tamil Nadu"> </option>
+          <option value="Karnataka"> </option>
+          <option value="Uttar Pradesh"> </option>
+          <option value="Kerala"> </option>
+          <option value="Rajasthan"> </option>
+        </datalist>
+      </div>
+    </div>
+
+    <div class="form-row mb-4">
+      <div class="col">
+        <span>Mobile Number:</span>
+        <input
+          type="number"
+          id="defaultRegisterFormMobileNumber"
+          class="form-control mb-4"
+          placeholder="Mobile Number"
+        />
+      </div>
+      <div class="col">
+        <span>Gender:</span><br />
+        <div>
+          <input type="radio" name="Gender" id="Male" />Male&nbsp;&nbsp;
+          <input type="radio" name="Gender" id="Female" />Female <br />
+          <!-- <input type="radio" name="Gender" id="TransGender" />Transgender -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign up button -->
+    <button  block="true" class="btn btn-primary my-4" type="submit">
+      Sign in
+    </button>
+  </form>
+</div>
